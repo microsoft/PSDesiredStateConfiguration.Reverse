@@ -63,7 +63,7 @@ function Orchestrator
     Import-Module -Name $module -Force
     
     
-    $Script:dscConfigContent += "<# Generated with SQLServer.Reverse " + $script:version + " #>`r`n"   
+    $Script:dscConfigContent += "<# Generated with " + $currentScript.name+ " " + $script:version + " #>`r`n"   
     $Script:dscConfigContent += "Configuration $Script:configName`r`n"
     $Script:dscConfigContent += "{`r`n"
 
